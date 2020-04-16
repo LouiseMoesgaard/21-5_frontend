@@ -1,0 +1,109 @@
+.hide {
+    display: none;
+}
+
+.open {
+    max-height: 9000px;
+}
+
+* {
+    margin: 0;
+}
+
+/*** Navigation **/
+
+nav {
+    height: 40px;
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 5;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "language login . logo . . menu";
+}
+
+.language {
+    width: 2.5rem;
+    margin: 0 auto;
+    grid-area: language;
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.language.open {
+    height: 600%;
+}
+
+.login {
+    display: block;
+    margin: 0 auto;
+    width: 2.5em;
+    grid-area: login;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.logo img {
+    width: 2.5rem;
+}
+
+
+
+.burger_open {
+    width: 2.5rem;
+    grid-area: menu;
+}
+
+.burger_close {
+    width: 2.5rem;
+}
+
+
+nav .menu {
+    list-style: none;
+    margin: 0;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: grey;
+}
+
+nav .menu li {
+    /* at positionerigen af -burger close styres her*/
+    text-align: right;
+    margin: 3rem 38px 0 0;
+}
+
+nav .menu li:first-child {
+    margin-top: 7.5px
+}
+
+nav .menu li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+
+
+/* splash */
+
+#splash {
+    height: 100vh;
+    background-image: url(billeder/landing_img.png);
+    background-size: cover;
+    background-position: 30% 11%;
+    max-width: none;
+}

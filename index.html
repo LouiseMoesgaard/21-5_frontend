@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="landing_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&family=Domine:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general_style.css">
+    <link rel="stylesheet" href="styles/index_style.css">
 </head>
 
 <body>
@@ -35,17 +36,17 @@
 
 
 
-            <img src="ikoner/profil_laks.svg" class="login">
+            <img src="ikoner/profil_hvid.svg" class="login">
 
             <a href="index.html" class="logo">
-                <img src="ikoner/canada.svg">
+                <img src="ikoner/logo_hvid.svg">
             </a>
 
-            <img src="ikoner/burger_mint.svg" class=" burger_open">
+            <img src="ikoner/burger_hvid.svg" class=" burger_open">
 
             <ul class="hide menu">
                 <li>
-                    <img src="ikoner/x_mint.svg" class=" burger_close">
+                   <i class="fas fa-times burger_close"></i>
                 </li>
                 <li>
                     <input type="text" placeholder="Søg">
@@ -79,37 +80,44 @@
 
     <main>
         <div id="splash">
+        <span id="scroll_btn" class="fas fa-angle-down">
+        </span>
 
         </div>
     </main>
 
     <footer>
-        <div>
-            <img>
-            <img>
+       <hr>
+        <div id="social">
+           <a href="https://www.facebook.com/enogtyvefem/">
+            <img src="ikoner/facebook_mint.svg" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/215moments/">
+            <img src="ikoner/instagram_mint.svg" alt="instagram">
+            </a>
         </div>
 
         <div class="footer_grid">
             <div class="footer_grid_item">
-                <p>21-5 realiserer dine drømme</p>
+                <h3>21-5 realiserer dine drømme</h3>
                 <div class="btn">
-                    <p>kontakt os</p>
+                    <p><a>kontakt os</a></p>
                 </div>
             </div>
             <div class="footer_grid_item">
-                <p>Andet</p>
+                <h3>Andet</h3>
                 <ul>
-                    <li>Nyheder</li>
-                    <li>Presse</li>
-                    <li>Cookie- og privatlivspolitik</li>
-                    <li>FAQ</li>
+                    <li><a href="footer_links/nyheder.html">Nyheder</a></li>
+                    <li><a href="footer_links/presse.html">Presse</a></li>
+                    <li><a href="footer_links/cookies.html">Cookie- og privatlivspolitik</a></li>
+                    <li><a href="Kontakt/faq.html">FAQ</a></li>
                 </ul>
             </div>
             <div class="footer_grid_item">
-                <p>Tilmeld nyhedsbrev</p>
+                <h3>Tilmeld nyhedsbrev</h3>
                 <form class="newsletter_form">
                     <input type="email" placeholder="example@mail.com">
-                    <button type="submit"></button>
+                    <button type="submit"><span class="fas fa-angle-right fa-2x"></span></button>
                 </form>
             </div>
         </div>
@@ -117,8 +125,7 @@
 
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/nav_colorchange.js"></script>
     <script src="https://kit.fontawesome.com/6492c587db.js" crossorigin="anonymous"></script>
-</body>
-
-</html>
+</body></html>

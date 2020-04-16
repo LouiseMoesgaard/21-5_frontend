@@ -1,0 +1,25 @@
+/* splash */
+
+main {
+    margin-top: 0;
+    padding: 0;
+}
+
+#splash {
+    height: 100vh;
+    background-image: url(/billeder/landing_img.png);
+    background-size: cover;
+    background-position: 30% 11%;
+    max-width: none;
+    opacity: 50%;
+}
+
+#scroll_btn {
+    display: block;
+    margin: 0 auto;
+    width: 1rem;
+    position: relative;
+    top: 93vh;
+    font-size: 3rem;
+    color: #FFFFFF;
+}

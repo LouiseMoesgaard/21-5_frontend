@@ -1,0 +1,220 @@
+
+body {
+    margin-bottom: 10px;
+}
+main {
+    margin: 3rem 0 3rem 0;
+    padding: 1vw;
+}
+.hide {
+    display: none;
+}
+
+.open {
+    max-height: 9000px;
+}
+
+* {
+    margin: 0;
+}
+
+/*Generelle tekster*/
+
+H1 {
+    font-family: 'Bellota Text', bold;
+    font-size: 2rem;
+}
+
+H2 {
+    font-family: 'Bellota Text', bold;
+    font-size: 2rem;
+}
+
+H3 {
+    font-family: 'Bellota Text', bold;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+p, li {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*** Navigation **/
+
+nav {
+    height: 40px;
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 5;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "language login . logo . . menu";
+}
+
+.language {
+    width: 2.5rem;
+    margin: 0 auto;
+    grid-area: language;
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.language.open {
+    height: 600%;
+}
+
+.login {
+    display: block;
+    margin: 0 auto;
+    width: 2.5em;
+    grid-area: login;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.logo img {
+    width: 2.5rem;
+}
+
+
+.burger_open {
+    width: 2.5rem;
+    margin: 0 auto;
+    grid-area: menu;
+}
+
+.burger_close {
+    font-size: 2.5rem;
+
+
+}
+
+nav .menu {
+    list-style: none;
+    margin: 0;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #FFFFFF;
+}
+
+nav .menu li {
+    /* at positionerigen af -burger close styres her*/
+    text-align: right;
+    margin: 3rem 15px 0 0;
+}
+
+nav .menu li:first-child {
+    margin-top: 7.5px
+}
+
+nav .menu li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+nav .menu input {
+    border: 1px solid #000000;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+
+nav.scroll {
+  background-color: #FFFFFF;
+}
+
+/*** Footer **/
+
+footer hr {
+    border-bottom: .2rem solid #B3DBD3;
+    margin:0 1rem 15px 1rem;
+}
+
+#social {
+    width: 95px;
+    margin: 0 auto;
+}
+
+#social img {
+    width: 2.5rem;
+    display: inline-block;
+
+}
+
+#social a:first-child img {
+   margin-right: 10px;
+}
+
+footer > p{
+    font-size: .8rem;
+    text-align: center;
+}
+
+.footer_grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7rem 10rem 8rem;
+    }
+
+.footer_grid ul {
+    text-align: left;
+    margin: 0 auto;
+    width: 15rem;
+}
+
+.footer_grid ul li a,
+.footer_grid ul li a:active,
+.footer_grid ul li a:link,
+.footer_grid ul li a:visited,
+.footer_grid ul li a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+footer form input {
+    border: 1px solid #000000;
+    padding: 7px 50px;
+    border-radius: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer form button {
+    background-color: #B3DBD3;
+    padding: 4px 10px;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 100px;
+}
+
+footer .btn {
+    background-color: #B3DBD3;
+    padding: 7px 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+
+}
+
+footer .btn a {
+    color: #FFFFFF;
+
+}

@@ -1,11 +1,12 @@
-
 body {
     margin-bottom: 10px;
 }
+
 main {
     margin: 3rem 0 3rem 0;
     padding: 1vw;
 }
+
 .hide {
     display: none;
 }
@@ -36,7 +37,8 @@ H3 {
     margin: 1rem 0;
 }
 
-p, li {
+p,
+li {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -135,14 +137,14 @@ nav .menu input {
 
 
 nav.scroll {
-  background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 /*** Footer **/
 
 footer hr {
     border-bottom: .2rem solid #B3DBD3;
-    margin:0 1rem 15px 1rem;
+    margin: 0 1rem 15px 1rem;
 }
 
 #social {
@@ -157,10 +159,10 @@ footer hr {
 }
 
 #social a:first-child img {
-   margin-right: 10px;
+    margin-right: 10px;
 }
 
-footer > p{
+footer > p {
     font-size: .8rem;
     text-align: center;
 }
@@ -170,7 +172,7 @@ footer > p{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 7rem 10rem 8rem;
-    }
+}
 
 .footer_grid ul {
     text-align: left;
@@ -216,5 +218,6 @@ footer .btn {
 
 footer .btn a {
     color: #FFFFFF;
+    text-decoration: none;
 
 }

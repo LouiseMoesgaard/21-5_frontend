@@ -1,11 +1,11 @@
-const nav = document.querySelector('nav');
+const navigation = document.querySelector('nav');
 window.onscroll = () => {
     if (this.scrollY <= 20) {
         changeBack();
-        nav.classList.remove('scroll');
+        navigation.classList.remove('scroll');
     } else {
         change();
-        nav.classList.add('scroll');
+        navigation.classList.add('scroll');
     }
 };
 

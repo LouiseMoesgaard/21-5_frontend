@@ -17,9 +17,60 @@ main {
 #scroll_btn {
     display: block;
     margin: 0 auto;
-    width: 1rem;
+    width: 2rem;
     position: relative;
     top: 93vh;
     font-size: 3rem;
     color: #FFFFFF;
+}
+
+
+.popup_btn {
+    width: 6rem;
+    height: 6rem;
+    background-color: #B3DCD4;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    border-radius: 25%;
+    text-align: center;
+    position: relative;
+    margin: 1rem auto 0 auto;
+
+}
+
+.popup_btn > span {
+    position: relative;
+    top: 1.5rem;
+}
+
+.popup_btn div:nth-child(2) {
+    border: 1px solid #FFFFFF;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -.7rem;
+    background-color: #B3DCD4;
+    left: 2rem;
+}
+
+.popup_btn div:nth-child(2) span {
+    vertical-align: bottom;
+}
+
+
+.popup_btn .popup {
+    width: 12rem;
+    padding: .5rem;
+    border-radius: 15px;
+    font-size: initial;
+    text-align: left;
+    border: 1px solid #B3DCD4;
+    background-color: #FFFFFF;
+    left: -3.5rem;
+    top: 4.5rem;
+    color: #000000;
+    position: absolute;
+    z-index: 2;
+
 }

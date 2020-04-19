@@ -17,3 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
         this.classList.toggle("open");
     })
 });
+
+
+function customContentListeners() {
+    document.querySelectorAll(".popup_btn").forEach(function (elm) {
+        elm.addEventListener("click", function () {
+            this.querySelector(".popup").classList.toggle("hide");
+        })
+    })
+}

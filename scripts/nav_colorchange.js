@@ -10,13 +10,13 @@ window.onscroll = () => {
 };
 
 function change() {
-    document.querySelector(".logo img").src = "/ikoner/logo_mint.svg";
-    document.querySelector(".login").src = "/ikoner/profil_mint.svg";
-    document.querySelector(".burger_open").src = "/ikoner/burger_mint.svg";
+    document.querySelector(".logo img").src = "ikoner/logo_mint.svg";
+    document.querySelector(".login").src = "ikoner/profil_mint.svg";
+    document.querySelector(".burger_open").src = "ikoner/burger_mint.svg";
 }
 
 function changeBack() {
-    document.querySelector(".logo img").src = "/ikoner/logo_hvid.svg";
-    document.querySelector(".login").src = "/ikoner/profil_hvid.svg";
-    document.querySelector(".burger_open").src = "/ikoner/burger_hvid.svg";
+    document.querySelector(".logo img").src = "ikoner/logo_hvid.svg";
+    document.querySelector(".login").src = "ikoner/profil_hvid.svg";
+    document.querySelector(".burger_open").src = "ikoner/burger_hvid.svg";
 }

@@ -1,11 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const nav = document.querySelector("nav .menu");
 
-    if (window.innerWidth >= 600) {
-        nav.classList.remove("hide")
-    } else {
-        nav.classList.add("hide")
-    }
     document.querySelector(".burger_open").addEventListener("click", function () {
         nav.classList.remove("hide")
     })

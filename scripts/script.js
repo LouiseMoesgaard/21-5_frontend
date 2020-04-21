@@ -70,4 +70,25 @@ function customContentListeners() {
             }
         });
     }
+
+    carouselReno();
+}
+
+function carouselReno() {
+    const url = "";
+    let JSON;
+    let numberOfImages;
+    document.addEventListener("DOMContentLoaded", function () {
+        getJSON();
+    })
+}
+
+async function getJSON() {
+    const response = await fetch(url);
+    JSON = await response.json();
+    buildCarousel();
+}
+
+function buildCarousel() {
+    numberOfImages = JSON.
 }

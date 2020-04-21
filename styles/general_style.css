@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    margin: 3rem 0 3rem 0;
+    margin: 4rem 0;
     padding: 5vw;
 }
 
@@ -24,17 +24,22 @@ main {
 
 H1 {
     font-family: 'Bellota Text', bold;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 H2 {
     font-family: 'Bellota Text', bold;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 0.9rem;
 }
 
 H3 {
     font-family: 'Bellota Text', bold;
     font-size: 1.5rem;
+    text-align: center;
     margin: 1rem 0;
 }
 
@@ -42,6 +47,8 @@ p,
 li,
 span {
     font-family: 'Open Sans', sans-serif;
+    line-height: 2rem;
+    font-size: 1rem;
 }
 
 
@@ -179,7 +186,7 @@ footer > p {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 7rem 10rem 8rem;
+    grid-template-rows: 7rem 11rem 8rem;
 }
 
 .footer_grid ul {
@@ -242,9 +249,8 @@ footer .btn a {
     transition: all .3s;
     border: 2px solid #F6B59D;
     font-family: 'Bellota Text', bold;
-    font-size: 1.3rem;
     text-align: center;
-    line-height: 12vw;
+    margin-bottom: 2rem;
 }
 
 
@@ -256,6 +262,7 @@ footer .btn a {
     cursor: pointer;
     text-decoration: none;
     color: #F6B59D;
+    font-size: 1.3rem;
 }
 
 
@@ -264,6 +271,11 @@ footer .btn a {
     list-style: none;
     text-decoration: none;
     padding: 0;
+}
+
+.colapse_btn ul li {
+    padding: 0.3rem;
+    font-size: 1rem;
 }
 
 .colapse_btn ul li a,
@@ -296,9 +308,9 @@ footer .btn a {
     transition: all .3s;
     border: 2px solid #F6B59D;
     font-family: 'Bellota Text', bold;
-    font-size: 1.3rem;
     text-align: center;
     line-height: 12vw;
+    margin-bottom: 2rem;
 }
 
 
@@ -310,8 +322,13 @@ footer .btn a {
     cursor: pointer;
     text-decoration: none;
     color: #F6B59D;
+    font-size: 1.3rem;
 }
 
+.multi_colapse_btn ul li {
+    padding: 0.3rem;
+    font-size: 1rem;
+}
 
 .multi_colapse_btn ul,
 .multi_colapse_btn ul a {
@@ -359,7 +376,12 @@ li.open {
 .btn a {
     color: #FFFFFF;
     text-decoration: none;
+}
 
+.btn.block {
+    display: block;
+    margin: 1.5rem auto;
+    width: 50%
 }
 
 

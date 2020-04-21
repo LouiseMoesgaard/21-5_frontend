@@ -20,4 +20,20 @@ function customContentListeners() {
             this.querySelector(".popup").classList.toggle("hide");
         })
     })
+
+    let colapse_btn = document.querySelectorAll(".colapse_btn");
+
+    for (let index = 0; index <= colapse_btn.length - 1; index++) {
+        colapse_btn[index].addEventListener("click", function () {
+            this.classList.toggle("open");
+            let icon = this.querySelector("i");
+            if (icon.classList.contains("fa-angle-down")) {
+                icon.classList.remove("fa-angle-down");
+                icon.classList.add("fa-angle-up");
+            } else {
+                icon.classList.remove("fa-angle-up");
+                icon.classList.add("fa-angle-down");
+            }
+        });
+    }
 }

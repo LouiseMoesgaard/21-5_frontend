@@ -4,7 +4,7 @@ body {
 
 main {
     margin: 3rem 0 3rem 0;
-    padding: 1vw;
+    padding: 5vw;
 }
 
 .hide {
@@ -17,6 +17,7 @@ main {
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 /*Generelle tekster*/
@@ -47,7 +48,7 @@ span {
 /*** Navigation **/
 
 nav {
-    height: 40px;
+    height: 65px;
     position: fixed;
     top: 0;
     padding: 10px 0;
@@ -59,10 +60,12 @@ nav {
     grid-template-rows: 100%;
     grid-template-areas:
         "language login . logo . . menu";
+    background-color: #FFFFFF;
 }
 
 .language {
     width: 2.5rem;
+    height: 2.5rem;
     margin: 0 auto;
     grid-area: language;
     list-style: none;
@@ -71,7 +74,7 @@ nav {
 }
 
 .language.open {
-    height: 600%;
+    height: 225px;
 }
 
 .login {
@@ -221,4 +224,59 @@ footer .btn a {
     color: #FFFFFF;
     text-decoration: none;
 
+}
+
+
+/**Colapse_btn**/
+
+.colapse_btn {
+    width: 100%;
+    max-height: 11vw;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    border: 2px solid #F6B59D;
+    font-family: 'Bellota Text', bold;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 12vw;
+}
+
+
+.colapse_btn span,
+.colapse_btn span a:active,
+.colapse_btn span a:link,
+.colapse_btn span a:visited,
+.colapse_btn span a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #F6B59D;
+}
+
+
+.colapse_btn ul,
+.colapse_btn ul a {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+.colapse_btn ul li a,
+.colapse_btn ul li a:active,
+.colapse_btnul li a:link,
+.colapse_btn ul li a:visited,
+.colapse_btn ul li a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.colapse_btn .highlight {
+    text-decoration: underline !important;
+    text-decoration-color: #F6B59D !important;
+}
+
+.colapse_btn.open {
+    max-height: 9000px;
 }

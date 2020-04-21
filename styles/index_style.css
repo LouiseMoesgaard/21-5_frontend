@@ -5,6 +5,10 @@ main {
     padding: 0;
 }
 
+nav {
+    background-color: transparent;
+}
+
 #splash {
     height: 100vh;
     background-image: url(../billeder/landing_img.png);

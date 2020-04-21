@@ -13,5 +13,3 @@ async function setPage(id) {
 
     customContentListeners();
 }
-
-function customContentListeners() {}

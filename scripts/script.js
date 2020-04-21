@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function customContentListeners() {
+    console.log("customContentListeners")
     document.querySelectorAll(".popup_btn").forEach(function (elm) {
         elm.addEventListener("click", function () {
             this.querySelector(".popup").classList.toggle("hide");
@@ -25,6 +26,39 @@ function customContentListeners() {
 
     for (let index = 0; index <= colapse_btn.length - 1; index++) {
         colapse_btn[index].addEventListener("click", function () {
+            this.classList.toggle("open");
+            let icon = this.querySelector("i");
+            if (icon.classList.contains("fa-angle-down")) {
+                icon.classList.remove("fa-angle-down");
+                icon.classList.add("fa-angle-up");
+            } else {
+                icon.classList.remove("fa-angle-up");
+                icon.classList.add("fa-angle-down");
+            }
+        });
+    }
+
+    let multi_colapse_btn = document.querySelectorAll(".multi_colapse_btn");
+    console.log("test")
+    for (let index = 0; index <= multi_colapse_btn.length - 1; index++) {
+        multi_colapse_btn[index].addEventListener("click", function (e) {
+            console.log("got here")
+            this.classList.toggle("open");
+            let icon = this.querySelector("i");
+            if (icon.classList.contains("fa-angle-down")) {
+                icon.classList.remove("fa-angle-down");
+                icon.classList.add("fa-angle-up");
+            } else {
+                icon.classList.remove("fa-angle-up");
+                icon.classList.add("fa-angle-down");
+            }
+        });
+    }
+
+    let multi_colapse_li = document.querySelectorAll(".colapse_wrap > li");
+    for (let index = 0; index <= multi_colapse_li.length - 1; index++) {
+        multi_colapse_li[index].addEventListener("click", function (e) {
+            e.stopPropagation();
             this.classList.toggle("open");
             let icon = this.querySelector("i");
             if (icon.classList.contains("fa-angle-down")) {

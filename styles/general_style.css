@@ -264,7 +264,7 @@ footer .btn a {
 
 .colapse_btn ul li a,
 .colapse_btn ul li a:active,
-.colapse_btnul li a:link,
+.colapse_btn ul li a:link,
 .colapse_btn ul li a:visited,
 .colapse_btn ul li a:hover {
     cursor: pointer;
@@ -279,4 +279,64 @@ footer .btn a {
 
 .colapse_btn.open {
     max-height: 9000px;
+}
+
+/**multi colapse **/
+
+.multi_colapse_btn {
+    width: 100%;
+    max-height: 11vw;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    border: 2px solid #F6B59D;
+    font-family: 'Bellota Text', bold;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 12vw;
+}
+
+
+.multi_colapse_btn span,
+.multi_colapse_btn span a:active,
+.multi_colapse_btn span a:link,
+.multi_colapse_btn span a:visited,
+.multi_colapse_btn span a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #F6B59D;
+}
+
+
+.multi_colapse_btn ul,
+.multi_colapse_btn ul a {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+.multi_colapse_btn ul li a,
+.multi_colapse_btn ul li a:active,
+.multi_colapse_btn ul li a:link,
+.multi_colapse_btn ul li a:visited,
+.multi_colapse_btn ul li a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.multi_colapse_btn .highlight {
+    text-decoration: underline !important;
+    text-decoration-color: #F6B59D !important;
+}
+
+.multi_colapse_btn.open,
+li.open {
+    max-height: 9000px !important;
+}
+
+.multi_colapse_btn .colapse_wrap > li {
+    max-height: 2rem;
+    overflow: hidden;
 }

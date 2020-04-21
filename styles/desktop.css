@@ -5,4 +5,10 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(auto-fill, 20rem);
     }
+
+
+
+    .multi_colapse_btn {
+        line-height: 5rem;
+    }
 }

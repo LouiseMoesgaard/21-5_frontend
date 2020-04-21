@@ -345,6 +345,23 @@ li.open {
     overflow: hidden;
 }
 
+/* Knapper */
+
+.btn {
+    background-color: #B3DBD3;
+    padding: 7px 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+
+}
+
+.btn a {
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
 
 /** grid **/
 

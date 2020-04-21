@@ -59,6 +59,10 @@ function customContentListeners() {
     for (let index = 0; index <= multi_colapse_li.length - 1; index++) {
         multi_colapse_li[index].addEventListener("click", function (e) {
             e.stopPropagation();
+            var anchor = e.target.querySelector("a")
+            if (anchor) {
+                window.location = anchor.href;
+            }
             this.classList.toggle("open");
             let icon = this.querySelector("i");
             if (icon.classList.contains("fa-angle-down")) {

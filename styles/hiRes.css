@@ -1,0 +1,14 @@
+/** hiRes **/
+@media (min-width:1440px) {
+
+    /* hi-res laptops and desktops */
+    main {
+        padding: 0 15vw;
+    }
+
+    .gridwrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto-fill, 20rem);
+    }
+}

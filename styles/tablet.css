@@ -1,0 +1,18 @@
+/** tablet **/
+
+@media (min-width:600px) {
+    /* tablet, portræt iPad */
+
+    .footer_grid {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .footer_grid ul {
+        text-align: left;
+        margin: 0 auto;
+        width: 15rem;
+    }
+}

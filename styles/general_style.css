@@ -382,6 +382,50 @@ li.open {
     width: 50%
 }
 
+/* Carousel */
+.carousel {
+    width: 100%;
+}
+
+.carousel .preview {
+    position: relative;
+}
+
+.carousel .preview .next,
+.carousel .preview .previous {
+    position: absolute;
+    top: 49%;
+    padding: 10px;
+    border-radius: 100%;
+    background: white;
+}
+
+.carousel .preview .next {
+
+    right: 5%;
+}
+
+.carousel .preview .previous {
+    left: 5%;
+}
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(auto-fill);
+    grid-gap: 10px;
+
+}
+
+.thumbnails img {
+    width: 100%;
+}
+
+.thumbnails img.active {
+    background-color: #F6B59D;
+    padding: 5px;
+}
+
 
 /** grid **/
 

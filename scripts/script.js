@@ -74,25 +74,82 @@ function customContentListeners() {
             }
         });
     }
-
-    carouselReno();
 }
 
-function carouselReno() {
-    const url = "";
-    let JSON;
-    let numberOfImages;
-    document.addEventListener("DOMContentLoaded", function () {
-        getJSON();
+
+
+function buildCarousel(carousel) {
+    console.log(carousel);
+    var carouselDOM = document.querySelector(".carousel");
+    var imgTag = document.createElement("img");
+
+    if (!carouselDOM) {
+        console.error("Trying to add carousel, without DOM object present");
+        return;
+    }
+    var preview = imgTag.cloneNode(true);
+    preview.src = carousel[0].guid;
+    preview.setAttribute("data-index", 0);
+    carouselDOM.firstElementChild.appendChild(preview);
+
+    carousel.forEach(function (image, index) {
+        var thumbnail = imgTag.cloneNode(true);
+        thumbnail.src = image.guid;
+        thumbnail.setAttribute("data-index", index);
+        thumbnail.addEventListener("click", function () {
+            var preview = carouselDOM.querySelector(".preview img");
+            var current = parseInt(preview.getAttribute("data-index"));
+            var nextIndex = parseInt(this.getAttribute("data-index"));
+            var next = imgTag.cloneNode(true);
+            next.src = carousel[nextIndex].guid;
+            next.setAttribute("data-index", nextIndex);
+
+            carouselDOM.firstElementChild.replaceChild(next, preview)
+            carouselDOM.lastElementChild.querySelector(`img.active`).classList.remove("active");
+            carouselDOM.lastElementChild.querySelector(`img[data-index="${nextIndex}"]`).classList.add("active");
+        })
+        carouselDOM.lastElementChild.appendChild(thumbnail);
+    });
+    carouselDOM.lastElementChild.firstElementChild.classList.add("active");
+
+    carouselDOM.querySelector(".previous").addEventListener("click", function () {
+        console.log("previous")
+        var preview = carouselDOM.querySelector(".preview img");
+        var current = parseInt(preview.getAttribute("data-index"));
+        var nextIndex
+        if (current == 0) {
+            nextIndex = carousel.length - 1
+        } else {
+            nextIndex = current - 1;
+        }
+        var next = imgTag.cloneNode(true);
+        next.src = carousel[nextIndex].guid;
+        next.setAttribute("data-index", nextIndex);
+
+        carouselDOM.firstElementChild.replaceChild(next, preview)
+        carouselDOM.lastElementChild.querySelector(`img.active`).classList.remove("active");
+        carouselDOM.lastElementChild.querySelector(`img[data-index="${nextIndex}"]`).classList.add("active");
+
+
     })
-}
+    carouselDOM.querySelector(".next").addEventListener("click", function () {
+        console.log("previous")
+        var preview = carouselDOM.querySelector(".preview img");
+        var current = parseInt(preview.getAttribute("data-index"));
+        var nextIndex
+        if (current == carousel.length - 1) {
+            nextIndex = 0
+        } else {
+            nextIndex = current + 1;
+        }
+        var next = imgTag.cloneNode(true);
+        next.src = carousel[nextIndex].guid;
+        next.setAttribute("data-index", nextIndex);
 
-async function getJSON() {
-    const response = await fetch(url);
-    JSON = await response.json();
-    buildCarousel();
-}
+        carouselDOM.firstElementChild.replaceChild(next, preview);
+        carouselDOM.lastElementChild.querySelector(`img.active`).classList.remove("active");
+        carouselDOM.lastElementChild.querySelector(`img[data-index="${nextIndex}"]`).classList.add("active");
+    })
 
-function buildCarousel() {
-    numberOfImages = JSON.
+
 }

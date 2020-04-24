@@ -55,7 +55,7 @@ function customContentListeners() {
         });
     }
 
-    let multi_colapse_li = document.querySelectorAll(".colapse_wrap > li");
+    let multi_colapse_li = document.querySelectorAll(".multi_colapse_btn .colapse_wrap > li");
     for (let index = 0; index <= multi_colapse_li.length - 1; index++) {
         multi_colapse_li[index].addEventListener("click", function (e) {
             e.stopPropagation();
@@ -64,6 +64,42 @@ function customContentListeners() {
                 window.location = anchor.href;
             }
             this.classList.toggle("open");
+            let icon = this.querySelector("i");
+            if (icon.classList.contains("fa-angle-down")) {
+                icon.classList.remove("fa-angle-down");
+                icon.classList.add("fa-angle-up");
+            } else {
+                icon.classList.remove("fa-angle-up");
+                icon.classList.add("fa-angle-down");
+            }
+        });
+    }
+
+
+    let faq_colapse_btn = document.querySelectorAll(".faq_colapse_btn");
+    for (let index = 0; index <= faq_colapse_btn.length - 1; index++) {
+        faq_colapse_btn[index].addEventListener("click", function (e) {
+            this.classList.toggle("faq_open");
+            let icon = this.querySelector("i");
+            if (icon.classList.contains("fa-angle-down")) {
+                icon.classList.remove("fa-angle-down");
+                icon.classList.add("fa-angle-up");
+            } else {
+                icon.classList.remove("fa-angle-up");
+                icon.classList.add("fa-angle-down");
+            }
+        });
+    }
+
+    let faq_colapse_li = document.querySelectorAll(".faq_colapse_btn .colapse_wrap > li");
+    for (let index = 0; index <= faq_colapse_li.length - 1; index++) {
+        faq_colapse_li[index].addEventListener("click", function (e) {
+            e.stopPropagation();
+            var anchor = e.target.querySelector("a")
+            if (anchor) {
+                window.location = anchor.href;
+            }
+            this.classList.toggle("faq_open");
             let icon = this.querySelector("i");
             if (icon.classList.contains("fa-angle-down")) {
                 icon.classList.remove("fa-angle-down");

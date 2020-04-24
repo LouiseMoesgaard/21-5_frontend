@@ -141,6 +141,31 @@
         padding: 2.5rem;
     }
 
+    /**faq colapse **/
+
+    .faq_colapse_btn {
+        border: 2.5px solid #F6B59D;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
+    .faq_colapse_btn span,
+    .faq_colapse_btn span a:active,
+    .faq_colapse_btn span a:link,
+    .faq_colapse_btn span a:visited,
+    .faq_colapse_btn span a:hover {
+        font-size: 2rem;
+    }
+
+    .faq_colapse_btn ul li {
+        margin-top: .5rem;
+        font-size: 1.7rem;
+    }
+
+    .faq_colapse_btn .colapse_wrap > li {
+        margin-top: 3rem;
+    }
+
     /** footer **/
 
     #social {

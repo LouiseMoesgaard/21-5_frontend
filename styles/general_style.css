@@ -152,6 +152,14 @@ nav .menu li a {
     cursor: pointer;
 }
 
+nav .menu li a:hover {
+    color: #B3DCD4;
+    text-decoration: none;
+    transition: 0.25s;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 nav .menu input {
     border: 1px solid #000000;
     padding: 5px;

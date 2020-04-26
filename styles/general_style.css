@@ -175,7 +175,7 @@ nav.scroll {
 /*** Footer **/
 
 footer hr {
-    border-bottom: .2rem solid #B3DBD3;
+    border: .15rem solid #B3DBD3;
     margin: 0 1rem 15px 1rem;
 }
 

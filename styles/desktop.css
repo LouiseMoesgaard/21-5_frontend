@@ -15,9 +15,22 @@
         margin: 1.5rem 75px 0 0;
     }
 
+    main {
+        margin: 4rem 0;
+        padding: 5vw 12vw;
+    }
+
 
 
     /*Generelle tekster*/
+
+    .text_margin {
+        margin: 0
+    }
+
+    .text_center {
+        text-align: center;
+    }
 
     H1 {
         font-size: 2rem;
@@ -81,11 +94,31 @@
     }
 
     .multi_colapse_btn ul li {
-        padding: 0.7rem;
+        margin-top: 1rem;
         font-size: 1.4rem;
     }
 
     .multi_colapse_btn .colapse_wrap > li {
-        padding: 2.5rem;
+        margin-top: 3rem;
     }
+
+    /**faq colapse **/
+
+    .faq_colapse_btn span,
+    .faq_colapse_btn span a:active,
+    .multi_colapse_btn span a:link,
+    .multi_colapse_btn span a:visited,
+    .multi_colapse_btn span a:hover {
+        font-size: 1.7rem;
+    }
+
+    .faq_colapse_btn ul li {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .faq_colapse_btn .colapse_wrap > li {
+        margin-top: 3rem;
+    }
+}
 }

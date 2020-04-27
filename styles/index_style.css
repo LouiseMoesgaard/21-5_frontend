@@ -75,3 +75,26 @@ nav {
   position: absolute;
   z-index: 2;
 }
+
+
+.horizontal_grid a {
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  width: 30%;
+  margin: 10px;
+}
+
+.horizontal_grid a img {
+  width: 30%;
+}
+
+.horizontal_grid a h3 {
+  background-color: #f7eddc;
+  color: black;
+  font-size: 90%;
+  border-radius: 50px;
+  padding: 5px 15px 5px 15px;
+  position: absolute;
+  top: -40px;
+}

@@ -5,17 +5,45 @@ main {
     padding: 0 !important;
 }
 
+
+/* styling af main i index*/
+
+.sitemargin {
+    margin: 4rem 0;
+    padding: 5vw;
+}
+
+/** Navigation **/
+
 nav {
     background-color: transparent;
 }
 
 #splash {
+    position: relative;
     height: 100vh;
+    max-width: none;
+}
+
+#splash::after {
+    content: "";
     background-image: url(../billeder/landing_img.png);
     background-size: cover;
     background-position: 30% 11%;
-    max-width: none;
-    opacity: 50%;
+    height: 100vh;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#splash h1 {
+    margin-top: 70%;
+
+
 }
 
 #scroll_btn {
@@ -71,9 +99,82 @@ nav {
     text-align: left;
     border: 2px solid #B3DCD4;
     background-color: #FFFFFF;
-    left: -3.5rem;
+    left: -3rem;
     top: 4.5rem;
     color: #000000;
     position: absolute;
     z-index: 2;
+}
+
+
+.popup_btn .popup p a,
+.popup_btn .popup p a:active,
+.popup_btn .popup p a:link,
+.popup_btn .popup p a:visited,
+.popup_btn .popup p a:hover {
+    cursor: pointer;
+    color: #000000;
+    text-align: center;
+    display: block;
+}
+
+
+/**margin for main i tablet**/
+@media (min-width:600px) {
+    /* tablet, portræt iPad */
+
+    .sitemargin {
+        margin: 4rem 0;
+        padding: 5vw 6vw;
+    }
+
+    #splash h1 {
+        font-size: 4rem !important;
+        margin-top: %;
+    }
+
+    #splash h2 {
+        font-size: 3rem !important;
+
+    }
+}
+
+/**margin for main i desktop**/
+
+@media (min-width:801px) {
+    .sitemargin {
+        margin: 4rem 0;
+        padding: 5vw 12vw;
+    }
+
+    .horizontal_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(auto-fill);
+        grid-column-gap: 30px;
+    }
+
+    .margin_icons_frontpage {
+        margin-bottom: 4.5rem;
+    }
+
+    .fig_graph {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    #splash h1 {
+        font-size: 4rem !important;
+        margin-top: 18%;
+    }
+
+    #splash h2 {
+        font-size: 2rem !important;
+
+    }
+
+    #splash h2 {
+        font-size: 2.5rem;
+
+    }
 }

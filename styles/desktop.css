@@ -13,7 +13,7 @@
     }
 
     nav .menu li {
-        margin: 1.5rem 75px 0 0;
+        margin: 1.8rem 75px 0 0;
     }
 
     main {
@@ -41,11 +41,13 @@
     H2 {
         font-size: 1.5rem;
         margin: 2rem 0 1rem 0;
+
     }
 
     H3 {
         font-size: 1.5rem;
         margin: 1.5rem;
+
     }
 
     p,
@@ -53,6 +55,7 @@
     span {
         line-height: 2rem;
         font-size: 1rem;
+
     }
 
     /**Colapse_btn**/

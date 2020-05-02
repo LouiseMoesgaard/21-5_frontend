@@ -112,9 +112,6 @@ nav {
     left: 2rem;
 }
 
-.popup_btn div:nth-child(2) span {
-    vertical-align: bottom;
-}
 
 
 .popup_btn .popup {
@@ -132,12 +129,14 @@ nav {
     z-index: 2;
 }
 
-.horizontal_grid a {
+.horizontal_grid.images a {
     text-decoration: none;
     position: relative;
     text-align: center;
-    height: 13.4vw;
+    height: 50vw;
+    margin-top: 1rem;
     background-size: cover;
+    display: block;
 }
 
 .horizontal_grid.images a.image1 {
@@ -208,6 +207,11 @@ nav {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(auto-fill);
         grid-column-gap: 30px;
+    }
+
+    .horizontal_grid.images a {
+        height: 13.4vw;
+        margin-top: 0;
     }
 
     .margin_icons_frontpage {

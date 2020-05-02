@@ -69,10 +69,17 @@ nav {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100%;
+    grid-template-rows: 100% 10%;
     grid-template-areas:
-        "language login . logo . . menu";
+        "language login . logo . . menu"
+        "bar bar bar bar bar bar bar";
     background-color: #FFFFFF;
+}
+
+nav hr {
+    grid-area: bar;
+    border: .15rem solid #B3DBD3;
+    margin: .5rem 1rem 15px 1rem;
 }
 
 .language {

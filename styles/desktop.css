@@ -9,6 +9,7 @@
 
     nav {
         height: 67px;
+        grid-template-columns: 1fr .5fr 1.75fr 1fr 1.25fr 1fr 1fr;
     }
 
     nav .menu li {

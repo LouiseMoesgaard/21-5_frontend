@@ -9,6 +9,7 @@
 
     nav {
         height: 67px;
+        grid-template-columns: 1fr .5fr 1.75fr 1fr 1.25fr 1fr 1fr;
     }
 
     nav .menu li {
@@ -57,7 +58,6 @@
     /**Colapse_btn**/
 
     .colapse_btn {
-        max-height: 5.4vw;
         width: 50%;
         margin: 0 auto 2rem auto;
     }
@@ -79,7 +79,6 @@
     /**multi colapse **/
 
     .multi_colapse_btn {
-        max-height: 5.4vw;
         width: 50%;
         margin: 0 auto 2rem auto;
 

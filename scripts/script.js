@@ -118,7 +118,6 @@ function customContentListeners() {
 
 
 function buildCarousel(carousel) {
-    console.log(carousel);
     var carouselDOM = document.querySelector(".carousel");
     var imgTag = document.createElement("img");
 
@@ -195,17 +194,21 @@ function buildCarousel(carousel) {
 
 
 function splashSlide() {
-    let splash = document.querySelector("#splash");
-    let classes = ["image1", "image2", "image3", "image4", "image5"];
-    let iterator = 0;
-    console.log("hot here")
-    setInterval(function () {
-        splash.classList.remove("image1", "image2", "image3", "image4", "image5");
-        splash.classList.add(classes[iterator]);
-        if (iterator == classes.length - 1) {
-            iterator = 0;
-        } else {
-            iterator += 1;
-        }
-    }, 3000);
+    if (window.location.pathname === "/index.html") {
+        let splash = document.querySelector("#splash");
+        let classes = ["image1", "image2", "image3", "image4", "image5"];
+        let iterator = 0;
+        console.log("hot here")
+        setInterval(function () {
+            splash.classList.remove("image1", "image2", "image3", "image4", "image5");
+            splash.classList.add(classes[iterator]);
+            if (iterator == classes.length - 1) {
+                iterator = 0;
+            } else {
+                iterator += 1;
+            }
+        }, 3000);
+    } else {
+        return;
+    }
 }

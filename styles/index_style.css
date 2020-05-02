@@ -125,14 +125,6 @@ nav {
   left: 2rem;
 }
 
-<<<<<<< HEAD
-.popup_btn div:nth-child(2) span {
-  vertical-align: bottom;
-}
-=======
->>>>>>> origin/master
-
-
 .popup_btn .popup {
   width: 12rem;
   padding: .5rem;
@@ -148,24 +140,23 @@ nav {
   z-index: 2;
 }
 
-<<<<<<< HEAD
-.horizontal_grid a {
+<<<<<<< HEAD .horizontal_grid a {
   text-decoration: none;
   position: relative;
   text-align: center;
   height: 13.4vw;
   background-size: cover;
   border-radius: 10px;
-=======
+}
+
 .horizontal_grid.images a {
-    text-decoration: none;
-    position: relative;
-    text-align: center;
-    height: 50vw;
-    margin-top: 1rem;
-    background-size: cover;
-    display: block;
->>>>>>> origin/master
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  height: 50vw;
+  margin-top: 1rem;
+  background-size: cover;
+  display: block;
 }
 
 .horizontal_grid.images a.image1 {
@@ -246,31 +237,15 @@ nav {
     margin: 0 auto;
   }
 
-<<<<<<< HEAD
-  #splash h1 {
-    font-size: 4rem !important;
-    margin-top: 18%;
-  }
-=======
-    .horizontal_grid.images a {
-        height: 13.4vw;
-        margin-top: 0;
-    }
-
-    .margin_icons_frontpage {
-        margin-bottom: 4.5rem;
-    }
->>>>>>> origin/master
-
-  #splash h2 {
-    font-size: 2rem !important;
-
+  .horizontal_grid.images a {
+    height: 13.4vw;
+    margin-top: 0;
   }
 
-  #splash h2 {
-    font-size: 2.5rem;
-
+  .margin_icons_frontpage {
+    margin-bottom: 4.5rem;
   }
+
 
   #splash h3 {
     width: 700px;

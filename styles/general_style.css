@@ -271,10 +271,18 @@ footer .btn a {
 
 /**Colapse_btn**/
 
+.colapse_btn li.open ul,
+.colapse_btn.open ul {
+    display: block !important;
+}
+
+.colapse_btn ul {
+    display: none;
+}
+
+
 .colapse_btn {
     width: 100%;
-    max-height: 11vw;
-    overflow: hidden;
     border-radius: 15px;
     cursor: pointer;
     transition: all .3s;
@@ -324,16 +332,18 @@ footer .btn a {
     text-decoration-color: #F6B59D !important;
 }
 
-.colapse_btn.open {
-    max-height: 9000px;
+/**multi colapse **/
+.multi_colapse_btn li.open ul,
+.multi_colapse_btn.open .colapse_wrap {
+    display: block !important;
 }
 
-/**multi colapse **/
+.multi_colapse_btn ul {
+    display: none;
+}
 
 .multi_colapse_btn {
     width: 100%;
-    max-height: 11vw;
-    overflow: hidden;
     border-radius: 15px;
     cursor: pointer;
     transition: all .3s;
@@ -380,16 +390,6 @@ footer .btn a {
 .multi_colapse_btn .highlight {
     text-decoration: underline !important;
     text-decoration-color: #F6B59D !important;
-}
-
-.multi_colapse_btn.open,
-li.open {
-    max-height: 9000px !important;
-}
-
-.multi_colapse_btn .colapse_wrap > li {
-    max-height: 3rem;
-    overflow: hidden;
 }
 
 

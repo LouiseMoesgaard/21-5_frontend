@@ -94,7 +94,6 @@
     /**Colapse_btn**/
 
     .colapse_btn {
-        max-height: 10vw;
         border: 2.5px solid #F6B59D;
         margin-bottom: 2rem;
         padding: 1rem;
@@ -118,7 +117,6 @@
     /**multi colapse **/
 
     .multi_colapse_btn {
-        max-height: 10vw;
         border: 2.5px solid #F6B59D;
         margin-bottom: 2rem;
         padding: 1rem;

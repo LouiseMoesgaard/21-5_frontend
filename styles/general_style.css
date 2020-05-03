@@ -475,6 +475,10 @@ li.faq_open ul,
     margin-left: 5px;
 }
 
+fullWidth {
+    width: 100% !important;
+}
+
 /* Knapper */
 
 .btn {

@@ -9,6 +9,6 @@
     .gridwrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(auto-fill, 20rem);
+        grid-template-rows: repeat(auto-fill);
     }
 }

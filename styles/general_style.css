@@ -146,6 +146,7 @@ nav .menu {
     right: 0;
     top: 0;
     background-color: #faf8f5;
+    border-left: 1px solid #313131;
 }
 
 nav .menu li {

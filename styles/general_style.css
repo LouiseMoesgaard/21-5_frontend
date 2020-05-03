@@ -299,7 +299,7 @@ footer span {
     border-radius: 15px;
     cursor: pointer;
     transition: all .3s;
-    border: 2px solid #F6B59D;
+    border: 1.5px solid #F6B59D;
     font-family: 'Bellota Text', bold;
     text-align: center;
     margin-bottom: 2rem;
@@ -360,7 +360,7 @@ footer span {
     border-radius: 15px;
     cursor: pointer;
     transition: all .3s;
-    border: 2px solid #F6B59D;
+    border: 1.5px solid #F6B59D;
     font-family: 'Bellota Text', bold;
     text-align: center;
     margin-bottom: 2rem;
@@ -420,7 +420,7 @@ li.faq_open ul,
     border-radius: 15px;
     cursor: pointer;
     transition: all .3s;
-    border: 2px solid #F6B59D;
+    border: 1.5px solid #F6B59D;
     font-family: 'Bellota Text', bold;
     text-align: center;
     margin-bottom: 2rem;

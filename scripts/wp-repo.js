@@ -15,12 +15,15 @@ async function setPage(id) {
 }
 
 async function getCarousel(id) {
-    if (!id) {
-        const urlParams = new URLSearchParams(window.location.search);
-        id = urlParams.get("carousel_id");
-    }
-    const response = await fetch(endpoint + "carousel/" + id);
-    var carousel = await response.json();
+    content.then(async () => {
+        if (!id) {
+            const urlParams = new URLSearchParams(window.location.search);
+            id = urlParams.get("carousel_id");
+        }
+        const response = await fetch(endpoint + "carousel/" + id);
+        var carousel = await response.json();
 
-    buildCarousel(carousel.images);
+        buildCarousel(carousel.images);
+    })
+
 }

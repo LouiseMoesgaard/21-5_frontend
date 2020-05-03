@@ -1,3 +1,8 @@
+document.addEventListener("click", (e) => {
+    if (!e.target.matches(".menu") && !e.target.matches(".menu li a") && !e.target.matches(".burger_open")) {
+        document.querySelector(".menu").classList.add("hide");
+    }
+})
 document.addEventListener("DOMContentLoaded", function () {
     const nav = document.querySelector("nav .menu");
 

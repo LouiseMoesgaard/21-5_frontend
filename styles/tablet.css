@@ -131,13 +131,9 @@
     }
 
     .multi_colapse_btn ul li {
-        padding: 0.7rem;
         font-size: 1.7rem;
     }
 
-    .multi_colapse_btn .colapse_wrap > li {
-        padding: 2.5rem;
-    }
 
     /**faq colapse **/
 

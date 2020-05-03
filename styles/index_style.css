@@ -141,6 +141,7 @@ nav {
     color: #000000;
     position: absolute;
     z-index: 2;
+    cursor: pointer;
 }
 
 .horizontal_grid a {

@@ -579,3 +579,8 @@ input {
 #send {
   width: 100px;
 }
+
+/** figurer **/
+.grey_graf {
+  padding: 5rem;
+}
